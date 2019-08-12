@@ -1,0 +1,10 @@
+.container {
+    padding: 30px;
+    width: 425px;
+    border: 2px solid;
+    display: inline-block
+}
+
+input {
+    float: right
+}
