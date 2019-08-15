@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>Counter assignment</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="bg-dark mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center text-white overflow-hidden">
+        <div class="my-3 py-3">
+            <h2 class="display-4 font-weight-normal">Counter</h2>
+        </div>
+        <div class="bg-light shadow-sm mx-auto" style="width: 80%; height: 500px; border-radius: 21px 21px 0 0;">
+            <p class="lead" style="color: darkslategrey; padding-top: 50px;">You have visited this page: {{session['visits']}} times</p>
+            <div style="display:inline-flex;">
+                <form action='/increment' method='POST'>
+                    <button>Add two visits!</button>
+                </form>
+                <form action='/clear' method='POST'>
+                    <button style="margin-left: 30px;padding-left:12px">Clear counter</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    </div>
+</body>
+
+</html>
+
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src=" https://code.jquery.com/jquery-3.3.1.slim.min.js " integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo " crossorigin="anonymous "></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js " integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1 " crossorigin="anonymous "></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js " integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM " crossorigin="anonymous "></script>
+</body>
+
+</html>
