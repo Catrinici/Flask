@@ -1,0 +1,27 @@
+body {
+    text-align: center;
+}
+
+.wrapper {
+    display: inline-flex;
+    text-align: center;
+}
+
+
+/* .box {
+    height: 200px;
+    width: 200px;
+    border: 1px solid black;
+    margin-left: 10px;
+} */
+
+.footer {
+    display: inline-block
+}
+
+.activities {
+    height: 100px;
+    border: 1px solid black;
+    width: 680px;
+    margin-left: 10px;
+}
