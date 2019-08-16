@@ -12,8 +12,11 @@
 
 <body class="album py-5 bg-light">
     <div class="header album py-5 bg-light">
-        <h3>Your Gold</h3>
-        <h3>0</h3>
+        <h3>Your Gold: {{total}} {{message}}</h3>
+        <form action="/reset" method="post">
+            <button>Reset</button>
+        </form>
+
     </div>
     <div class="wrapper">
 
@@ -23,7 +26,7 @@
             </div>
             <div class="card-body">
                 <p class="card-text">(earns 10-20 golds)</p>
-                <form action="process_money">
+                <form action="/process_money" method="post">
                     <input type="hidden" name="building" value="farm" />
                     <button>Find Gold!</button>
                 </form>
@@ -36,7 +39,7 @@
             </div>
             <div class="card-body">
                 <p class="card-text">(earns 5-10 golds)</p>
-                <form action="process_money">
+                <form action="/process_money" method="post">
                     <input type="hidden" name="building" value="cave" />
                     <button>Find Gold!</button>
                 </form>
@@ -49,7 +52,7 @@
             </div>
             <div class="card-body">
                 <p class="card-text">(earns 2-5 golds)</p>
-                <form action="process_money">
+                <form action="/process_money" method="post">
                     <input type="hidden" name="building" value="house" />
                     <button>Find Gold!</button>
                 </form>
@@ -61,8 +64,8 @@
                 <h4>Casino</h4>
             </div>
             <div class="card-body">
-                <p class="card-text">(earns 0-50 golds)</p>
-                <form action="process_money">
+                <p class="card-text">(earns/takes 0-50 golds)</p>
+                <form action="/process_money" method="post">
                     <input type="hidden" name="building" value="casino" />
                     <button>Find Gold!</button>
                 </form>
@@ -72,7 +75,9 @@
     <div class="footer jumbotron">
         <h4>Activities</h4>
         <div class="activities">
-
+            {% for one_activity in activities %}
+            <p>{{one_activity}}</p>
+            {% endfor %}
         </div>
     </div>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>

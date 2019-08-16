@@ -20,7 +20,8 @@ body {
 }
 
 .activities {
-    height: 100px;
+    text-align: initial;
+    padding-left: 20px;
     border: 1px solid black;
     width: 680px;
     margin-left: 10px;
