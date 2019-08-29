@@ -1,0 +1,10 @@
+.box1,
+.box2,
+.box3,
+.box4 {
+    margin: 20px;
+}
+
+.box1 {
+    margin-top: 0px;
+}
