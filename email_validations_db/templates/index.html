@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Email Validation DB</title>
+</head>
+
+<body>
+    <div class="box1">
+
+    </div>
+
+    <div class="box2">
+        <form action="/create" method="POST">
+            <input type="text" name="email">
+            <button>Sumbmit</button> {% with messages = get_flashed_messages() %} {% if messages %} {% for message in messages %}
+            <p>{{message}}</p>
+            {% endfor %} {% endif %} {% endwith %}
+        </form>
+    </div>
+</body>
+
+</html>
